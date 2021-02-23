@@ -22,7 +22,7 @@ public class Property {
 	private String picture;
 	
 	@Column(name="property_price")
-	private int price;
+	private String price;
 	
 	@Column(name="property_title")
 	private String title;
@@ -35,7 +35,7 @@ public class Property {
 	}
 	
 		
-	public Property(long id, String title, String picture, int price, String address) {
+	public Property(long id, String title, String picture, String price, String address) {
 		super();
 		this.id = id;
 		this.title = title;
@@ -62,10 +62,10 @@ public class Property {
 	public void setPicture(String picture) {
 		this.picture = picture;
 	}
-	public int getPrice() {
+	public String getPrice() {
 		return price;
 	}
-	public void setPrice(int price) {
+	public void setPrice(String price) {
 		this.price = price;
 	}
 	public String getAddress() {
